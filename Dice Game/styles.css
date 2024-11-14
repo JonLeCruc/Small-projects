@@ -1,0 +1,136 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.container {
+  width: 60%;
+  text-align: center;
+}
+
+.scoreboards {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 8rem;
+  text-align: center;
+  background-color: #333;
+  color: #EEEEEE;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.player-container {
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+  width: 100%;
+}
+
+.playerOne, .playerTwo {
+  flex: 1; 
+  text-align: center;
+}
+
+.divider {
+  width: 2px;
+  background-color: white; 
+  height: 100%; 
+  margin: 0 1rem; 
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+h2 {
+  color: #45b894;
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 150px;
+  height: 50px;
+  background-color: #4ECCA3;
+  font-family: 'Lobster', cursive;
+  font-size: large;
+  color: #393E46;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45b894;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+ol {
+  height: 20px;
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  li {
+    display: inline-block;
+    height: 20px;
+    border: 1px solid #fff;
+    margin-right: 4px;
+    position: relative;
+    &:nth-child(5n) {
+      transform: rotate(300deg);
+      height: 30px;
+      position: relative;
+      left: -15px;
+      top: 5px;
+      margin-right: 1em;
+      margin-top: -10px;
+    }
+  }
+}
